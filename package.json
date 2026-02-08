@@ -1,0 +1,12 @@
+{
+  "name": "agentic-rag-ai",
+  "version": "1.0.0",
+  "description": "Agentic RAG AI Pipeline - Enterprise AI Assistant",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build"
+  },
+  "engines": {
+    "node": "18.18.0",
+    "npm": "9.8.1"
+  }
+}
