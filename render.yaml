@@ -4,9 +4,8 @@ services:
     env: python
     plan: free
     buildCommand: |
-      pip install --upgrade pip
-      pip install setuptools wheel
-      pip install -r requirements.txt
+      pip install --upgrade pip setuptools wheel
+      pip install --no-build-isolation -r requirements.txt
       cd frontend
       npm install
       npm run build
@@ -16,6 +15,6 @@ services:
       - key: USE_MOCK
         value: "true"
       - key: PYTHON_VERSION
-        value: "3.11.9"
+        value: "3.11"
       - key: NODE_VERSION
         value: "20.11.0"
