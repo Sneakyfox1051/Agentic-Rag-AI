@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 import axios from 'axios';
 
-// Use relative URL in production, absolute in development
+// Use Render backend URL in production, localhost in development
 const API_URL = process.env.REACT_APP_API_URL || 
-  (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:8000');
+  (process.env.NODE_ENV === 'production' ? 'https://agentic-rag-ai.onrender.com' : 'http://localhost:8000');
 
 function App() {
   const [query, setQuery] = useState('');
