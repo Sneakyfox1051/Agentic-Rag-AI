@@ -4,8 +4,9 @@ services:
     env: python
     plan: free
     buildCommand: |
-      python3.11 -m pip install --upgrade pip setuptools wheel
-      python3.11 -m pip install -r requirements.txt
+      pip install --upgrade pip
+      pip install setuptools wheel
+      pip install -r requirements.txt
       cd frontend
       npm install
       npm run build
